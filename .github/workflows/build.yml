@@ -33,7 +33,7 @@ jobs:
           pytest
   
   build-image:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     needs: test
     permissions:
